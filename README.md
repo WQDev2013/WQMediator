@@ -5,5 +5,5 @@
 
 二、原理及实现
 
-       使用OC的runtime运行时去查找类、方法的特性，具体调用流程如图，主界面使用分类分别跳转文件、视频模块，一个模块对应一个分类，图中FileModule、VideoMeeting分别是文件、视频模块的一个分类，主要是用来区分不同业务、为Mediator瘦身。这也是performTarget:action:params调了两次的原因。performTarget:action:params通过runtime找到对应的类（Target）以及方法（Action）后，具体创建对应的控制器。
+使用OC的runtime运行时去查找类、方法的特性，具体调用流程如图，主界面使用分类分别跳转文件、视频模块，一个模块对应一个分类，图中FileModule、VideoMeeting分别是文件、视频模块的一个分类，主要是用来区分不同业务、为Mediator瘦身。这也是performTarget:action:params调了两次的原因。performTarget:action:params通过runtime找到对应的类（Target）以及方法（Action）后，具体创建对应的控制器。
 
